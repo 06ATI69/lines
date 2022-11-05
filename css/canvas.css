@@ -1,0 +1,32 @@
+/* ==== A programod a következő kritériumoknak feleljen meg:
+
+Hozz létre egy lineToCenter(positionX, positionY, color) függvényt, amely a meghívásakor húz egy vonalat a canvas középpontjába.
+A függvény három paramétert fogad: a positionX és positionY a vonal kezdőpontjának a koordinátái, a color pedig a vonal színe.
+Rajzolj 1000 vonalat úgy, hogy egy ciklus segítségével 1000-szer meghívod a függvényedet.
+A függvény minden meghívásakor változzon a vonal kezdőpontja a canvas egyik véletlenszerű pontjáról egy másikra.
+A véletlenszám-generáláshoz használd az alábbi függvényt:
+function random(max, min) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+Amikor meghívod a random(max, min) függvényt, használd a canvas méreteit argumentumként.
+A vonalak színe legyen 'maroon'.==== */
+
+body {
+    text-align: center;
+    margin: 12.5% 0 0;
+    background-color: rgb(128, 0, 0, .5)
+}
+
+canvas {
+    width: 28.125rem;
+    height: 21.875rem;
+    border: 1px solid black;
+    background-color: white;
+}
+
+@media (min-width: 600px) {
+    canvas {
+      display: inline-block;
+      border-bottom: none;
+  }
+}
